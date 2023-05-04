@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gehenna</title>
+    <style>
+
+
+      body
+      {
+      background-image: url(login.gif);
+      background-size: cover;
+      text-align: center;
+      animation: fadeIn 5s;
+      animation-duration: 7s;
+      }
+
+      @keyframes fadeIn
+      {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+
+      /* Define CSS styles for the text */
+      .text
+      {
+        text-align: center;
+        font-family: "Courier New";
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        font-size: 50px;
+        color: #c0b391;
+      }
+
+      /* define CSS styles for smallText */
+      .smallText
+      {
+        text-align: center;
+        font-family: "Courier New";
+        margin-right: auto;
+        margin-left: auto;
+        width: 10%;
+        font-size: 20px;
+        color: #c0b391;
+      }
+
+      /* Define CSS styles for the body */
+      body
+      {
+        background-image: url(login.gif);
+        background-size: cover;
+        text-align: center;
+      }
+
+      /* Define CSS styles for the password input field */
+      input[type="password"]
+      {
+      border-radius: 0;
+      background-color: #ded4bb;
+      color: black;
+      padding: 10px;
+      border: none;
+      outline: none;
+      }
+      .hyperlink {
+        text-decoration: none;
+      }
+      a
+      {
+        text-decoration: none;
+      }
+
+      .hyperlink
+      {
+        text-decoration: none;
+        text-align: center;
+        font-family: "Courier New";
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        font-size: 15px;
+        color: #c0b391;
+        animation: fadeIn 5s;
+        animation-duration: 7s;
+      }
+
+      #submitBtn
+      {
+        width: 80px;
+        height: 20px;
+        box-shadow: none;
+        display: inline-block;
+        color: white;
+        outline: none !important;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        margin: 20px;
+        border-radius: 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+
+      /* Define CSS styles for the submit button hover effect */
+      #submitBtn:hover {
+        transform: translateY(-3px);
+      }
+
+
+    </style>
+
+    <script>
+      function checkPassword() {
+        // Get the value of the input field
+        var password = document.getElementById("password").value;
+
+        // Check if the password is correct
+        if (password === "orpheus")
+        {
+          // Redirect the user to the Gehenna website
+          window.location.href = "gehennaMain.html";
+        } else {
+          // Display an error message
+          alert("Incorrect");
+        }
+      }
+    </script>
+  </head>
+<br><br><br><br><br><br>
+  <body>
+    <!-- Display the Gehenna text -->
+    <p class="text">G e h e n n a</p>
+    <p class = smallText>User   ID</p>
+
+    <!-- Display the password input field and submit button -->
+    <div>
+      <input type="password" id="password" placeholder="•••••••••••">
+      <br>
+      <a href="#" onclick="checkPassword()">
+        <img src="button.png" alt="Submit" id="submitBtn" />
+        <br><br><br>
+
+    </div>
+
+  </body>
+  <a class="hyperlink" href="help.html">help</a>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Home</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* main background */
+body {
+  font-family: "Courier New", Arial, sans-serif;
+  background-color: #3C4650EE;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* main tab color */
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #2C333A;
+
+}
+
+header > nav > div {
+  float: left;
+  width: 16.6666%;
+  height: 100%;
+  position: relative;
+}
+
+/* font color */
+header > nav > div > a {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  line-height: 50px;
+  color: #fbfbfb;
+  transition: background-color 0.2s ease;
+}
+
+/* controls hover color of dropdown */
+header > nav > div:hover > a {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* background of dropdown */
+header > nav > div > div {
+  display: none;
+  overflow: hidden;
+  background-color: #343E46;
+  min-width: 200%;
+  position: absolute;
+  padding: 10px;
+}
+
+header > nav > div:not(:first-of-type):not(:last-of-type) > div {
+  left: -50%;
+  border-radius: 0 0 3px 3px;
+}
+
+header > nav > div:first-of-type > div {
+  left: 0;
+  border-radius: 0 0 3px 0;
+}
+
+header > nav > div:last-of-type > div {
+  right: 0;
+  border-radius: 0 0 0 3px;
+}
+
+header > nav > div:hover > div {
+  display: block;
+}
+
+/* sub tab and font color */
+header > nav > div > div > a {
+  display: block;
+  float: left;
+  padding: 8px 10px;
+  width: 46%;
+  margin: 2%;
+  text-align: center;
+  background-color: #677179;
+  color: #fbfbfb;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+}
+
+header > nav > div > div > a:hover {
+  background-color: #212121;
+  cursor: pointer;
+}
+
+h1 {
+  margin-top: 100px;
+  font-weight: 100;
+}
+
+p {
+  color: #aaa;
+  font-weight: 300;
+}
+
+@media (max-width:600px) {
+  header > nav > div > div > a {
+      margin: 5px 0;
+      width: 100%;
+  }
+  header > nav > div > a > span {
+      display: none;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <header>
+		<nav>
+
+				<div>
+            <a href="index.html">Home</a>
+				</div>
+
+				<div>
+						<a href="about.html" class = text-white>About</a>
+				</div>
+				<div>
+						<a class = text-white>Work</a>
+						<div>
+              <a href="glitchart.html" class = text-white>Glitch Art</a>
+              <a href="netart.html" class = text-white>net.art</a>
+              <a href="photoshop.html" class = text-white>Photoshop</a>
+              <a href="blender.html" class = text-white>Blender</a>
+              <a href="ai.html" class = text-white>AI Art</a>
+						</div>
+				</div>
+				<div>
+						<a href="contact.html" class = text-white>Contact</a>
+				</div>
+</header>
+  <h1 class = text-white>net.art</h1>
+<br><br>
+<br><br>
+  <div class="container">
+  <a href="./netart\index.html" class = text-white>gehenna.net</a>
+  <p>This website is a modern digital retelling of Orpheus and Eurydice.</p>
+  <p>The entire journey takes place on an interactive website called gehenna.net</p>
+  <p>WEBSITE CURRENTLY NOT WORKING</p>
+
+  <p>9/9/22</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+          <img src="Subfolders\netart\homepage.png" alt="court" style="width:100%">
+          <div class="caption">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+          <img src="Subfolders\netart\angle.png" alt="senate" style="width:100%">
+          <div class="caption">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+          <img src="Subfolders\netart\light.png" alt="house" style="width:100%">
+          <div class="caption">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
